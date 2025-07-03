@@ -6,7 +6,7 @@ Set-AzContext -TenantId "1cdb53f5-bf60-4623-b11c-aecd0c81bc42"
 Write-Host "✅ Successfully logged in and set context to tenant: 1cdb53f5-bf60-4623-b11c-aecd0c81bc42"
 
 # Import VM list from external file
-. "C:\Temp\CPU&Memory\AzureMetricforCPU\vm-list1.ps1"
+. "C:\Temp\CPU&Memory\AzureMetricforCPU\vm-list17.ps1"
 
 # Date Range
 $startTime = Get-Date "2025-06-01T00:00:00Z"
