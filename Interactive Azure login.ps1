@@ -1,16 +1,16 @@
 # Interactive Azure login
-Connect-AzAccount -Tenant "1cdb53f5-bf60-4623-b11c-aecd0c81bc42" -UseDeviceAuthentication
+Connect-AzAccount -Tenant "c8c43385-ecd2-4c94-9bd7-02beb29df8c8" -UseDeviceAuthentication
 
 # Set context to specified tenant
-Set-AzContext -TenantId "1cdb53f5-bf60-4623-b11c-aecd0c81bc42"
+Set-AzContext -TenantId "c8c43385-ecd2-4c94-9bd7-02beb29df8c8"
 Write-Host "✅ Successfully logged in and set context to tenant: 1cdb53f5-bf60-4623-b11c-aecd0c81bc42"
 
 # Import VM list from external file
-. "C:\Temp\CPU&Memory\AzureMetricforCPU\vm-list17.ps1"
+. "C:\Temp\CPU&Memory\AzureMetricforCPU\vm-list18.ps1"
 
 # Date Range
-$startTime = Get-Date "2025-06-01T00:00:00Z"
-$endTime = Get-Date "2025-06-30T23:59:59Z"
+$startTime = Get-Date "2025-08-01T00:00:00Z"
+$endTime = Get-Date "2025-08-31T23:59:59Z"
 
 # Initialize array for metrics
 $cpuMemoryData = @()
